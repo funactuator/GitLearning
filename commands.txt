@@ -1,0 +1,32 @@
+---config git in your pc 
+
+
+git config --global user.name "your username"
+git config --global user.email  "youremail"
+
+---create github repository----
+---intialize your project directory as git 
+	git init
+---add gitignore file if required ---- those files which you dont wish to track are written in this file
+
+--touch .gitignore --- touch command creates a file 
+---cat <filename> it shows the content of the file
+
+------------------setup ssh key in your github repository -- makes push to remote repo easy----
+---search add ssh key to github windows --- easy peasy
+
+ssh-keygen -t rsa -b 4096 -C "your email"
+
+----git basic commands to set things up
+
+git add . --- add all files to staging area
+git commit -m "your commit message" -- all gets commited
+git log 						--- view all commits till date
+git status 						----view current status of git working tree----
+
+
+---setup remote repo----
+git remote add origin <url from github repo>
+git push origin master
+
+--finish ..
